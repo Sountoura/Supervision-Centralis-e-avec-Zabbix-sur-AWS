@@ -7,9 +7,9 @@ Ce projet présente la mise en œuvre d'une infrastructure de monitoring central
 **Cloud Provider :** AWS (Région us-east-1).
 **Conteneurisation :** Docker & Docker-Compose.
 **Instances EC2 :**
-    * **Serveur Zabbix :** t3.large (Ubuntu).
-    * **Client Linux :** t3.medium (Ubuntu).
-    * **Client Windows :** t3.large (Windows Server).
+* **Serveur Zabbix :** t3.large (Ubuntu).
+* **Client Linux :** t3.medium (Ubuntu).
+* **Client Windows :** t3.large (Windows Server).
 
 ## Sécurité (Security Groups)
 Les flux réseaux suivants ont été autorisés pour permettre le monitoring:
