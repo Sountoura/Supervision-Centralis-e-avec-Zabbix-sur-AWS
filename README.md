@@ -4,15 +4,15 @@
 Ce projet présente la mise en œuvre d'une infrastructure de monitoring centralisée sur **AWS** utilisant **Zabbix** (déployé via Docker). L'objectif est de surveiller en temps réel un parc hybride composé d'instances **Linux (Ubuntu)** et **Windows Server**.
 
 ## Architecture Technique
-* [cite_start]**Cloud Provider :** AWS (Région us-east-1)[cite: 65].
-* [cite_start]**Conteneurisation :** Docker & Docker-Compose[cite: 44].
-* **Instances EC2 :**
-    * [cite_start]Serveur Zabbix : t3.large (Ubuntu)[cite: 8].
-    * [cite_start]Client Linux : t3.medium (Ubuntu)[cite: 8].
-    * [cite_start]Client Windows : t3.large (Windows Server)[cite: 9].
+**Cloud Provider :** AWS (Région us-east-1).
+**Conteneurisation :** Docker & Docker-Compose.
+**Instances EC2 :**
+    * Serveur Zabbix : t3.large (Ubuntu).
+    * Client Linux : t3.medium (Ubuntu).
+    * Client Windows : t3.large (Windows Server).
 
 ## Sécurité (Security Groups)
-[cite_start]Les flux réseaux suivants ont été autorisés pour permettre le monitoring[cite: 6]:
+Les flux réseaux suivants ont été autorisés pour permettre le monitoring:
 * **Port 80/443 :** Interface Web Zabbix.
 * **Ports 10050/10051 :** Communications entre le serveur et les agents.
 * **Port 22 (SSH) & 3389 (RDP) :** Administration à distance.
